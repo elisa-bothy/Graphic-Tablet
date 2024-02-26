@@ -64,7 +64,7 @@ public class GraphicTablet extends JFrame{
 
             @Override
             public void keyReleased(KeyEvent ke) {
-                jl1.setText(" lettre écrite : "+ke.getKeyChar()+ jl1.getText() + " ");
+                jl1.setText(" Caractère utilisé : "+ke.getKeyChar()+ jl1.getText() + " ");
             }
             
              
