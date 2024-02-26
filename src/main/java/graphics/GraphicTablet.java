@@ -33,7 +33,7 @@ public class GraphicTablet extends JFrame{
     
      public GraphicTablet() {
         jtf = new JTextField();
-        c = new Container();
+        c = new JPanel();
         jl1 = new JLabel();
         jl2 = new JLabel();
         north = new JPanel();
@@ -87,11 +87,12 @@ public class GraphicTablet extends JFrame{
          jtf.setPreferredSize(new Dimension(200, 30)); 
 
         c.setPreferredSize(new Dimension(400, 400));
+        c.setBackground(Color.DARK_GRAY);
         
         jl1.setOpaque(true);
-        jl1.setBackground(Color.CYAN);
+        jl1.setBackground(Color.magenta);
         jl2.setOpaque(true);
-        jl2.setBackground(Color.CYAN);
+        jl2.setBackground(Color.magenta);
         north.setLayout(new BoxLayout(north , BoxLayout.PAGE_AXIS));
         north.add(jtf);
         north.add(jl1);
