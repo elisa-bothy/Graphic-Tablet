@@ -84,15 +84,13 @@ public class GraphicTablet extends JFrame{
                 jl2.setText("Souris en x : " + x + " et y :" + y);
             }
         });
-         jtf.setPreferredSize(new Dimension(200, 30)); 
-
+        jtf.setPreferredSize(new Dimension(200, 30)); 
+        jl1.setPreferredSize(new Dimension(200, 30));
+        jl2.setPreferredSize(new Dimension(200, 30)); 
         c.setPreferredSize(new Dimension(400, 400));
-        c.setBackground(Color.DARK_GRAY);
-        
-        jl1.setOpaque(true);
-        jl1.setBackground(Color.magenta);
-        jl2.setOpaque(true);
-        jl2.setBackground(Color.magenta);
+        c.setBackground(Color.GREEN);
+        jtf.setOpaque(true);
+        jtf.setBackground(Color.BLUE);
         north.setLayout(new BoxLayout(north , BoxLayout.PAGE_AXIS));
         north.add(jtf);
         north.add(jl1);
